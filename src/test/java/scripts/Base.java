@@ -22,6 +22,7 @@ public class Base {
     GoogleSearchResultPage googleSearchResultPage;
     HeroAppPage heroAppPage;
     FacebookPage facebookPage;
+    ExpediaPage expediaPage;
 
     @BeforeMethod
     public void setup(){
@@ -34,6 +35,7 @@ public class Base {
         googleSearchResultPage = new GoogleSearchResultPage(driver);
         heroAppPage = new HeroAppPage(driver);
         facebookPage = new FacebookPage(driver);
+        expediaPage = new ExpediaPage(driver);
     }
 
     @AfterMethod

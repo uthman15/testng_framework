@@ -8,16 +8,38 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">41,349</td><td></td><td></td></tr>
+<tr><th colspan="8">Regression</th></tr>
+<tr><td><a href="#t0">All Functionalities</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">95,344</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">scripts._01_AppleTest</td><td><a href="#m0">testAppleTitle</a></td><td rowspan="1">1653253174062</td><td rowspan="1">1006</td></tr><tr class="passedeven"><td><a href="#m1">testAppleURL</a></td><td rowspan="1">1653253179504</td><td rowspan="1">1409</td></tr><tr class="passedodd"><td rowspan="1">scripts._02_TechGlobalTest</td><td><a href="#m2">testApplicationFormHeading</a></td><td rowspan="1">1653253168910</td><td rowspan="1">716</td></tr><tr class="passedeven"><td rowspan="3">scripts._03_EtsyTest</td><td><a href="#m3">testEtsyLogo</a></td><td rowspan="1">1653253144672</td><td rowspan="1">2971</td></tr><tr class="passedeven"><td><a href="#m4">testEtsySearch</a></td><td rowspan="1">1653253152009</td><td rowspan="1">2368</td></tr><tr class="passedeven"><td><a href="#m5">testEtsySearchResult</a></td><td rowspan="1">1653253158801</td><td rowspan="1">5476</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">All Functionalities &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts._07_DropdownTest</td><td><a href="#m0">testExpediaDropdowns</a></td><td rowspan="1">1653857937230</td><td rowspan="1">37893</td></tr><tr><th colspan="4">All Functionalities &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">scripts._01_AppleTest</td><td><a href="#m1">testAppleURL</a></td><td rowspan="1">1653857890146</td><td rowspan="1">1643</td></tr><tr class="passedodd"><td rowspan="1">scripts._03_EtsyTest</td><td><a href="#m2">testMainHeader</a></td><td rowspan="1">1653857896245</td><td rowspan="1">1636</td></tr><tr class="passedeven"><td rowspan="1">scripts._04_GoogleSearchTest</td><td><a href="#m3">testGoogleStoreLink</a></td><td rowspan="1">1653857902538</td><td rowspan="1">2252</td></tr><tr class="passedodd"><td rowspan="1">scripts._05_CheckBoxTest</td><td><a href="#m4">testCheckBoxInHeroApp</a></td><td rowspan="1">1653857909213</td><td rowspan="1">8979</td></tr><tr class="passedeven"><td rowspan="1">scripts._06_RadioButtonTest</td><td><a href="#m5">testFacebookGenderRadioButtons</a></td><td rowspan="1">1653857922564</td><td rowspan="1">3107</td></tr><tr class="passedodd"><td rowspan="2">scripts._07_DropdownTest</td><td><a href="#m6">testEbayDropdown</a></td><td rowspan="1">1653857980179</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m7">testUnsecurePasswordErrorMessage</a></td><td rowspan="1">1653857930034</td><td rowspan="1">2944</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">scripts._01_AppleTest#testAppleTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>All Functionalities</h2><h3 id="m0">scripts._07_DropdownTest#testExpediaDropdowns</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Uthmans-MacBook-Pro.local&apos;, ip: &apos;2601:244:4801:930:b5cc:4395:3e96:a957%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:53907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b6bde4fb497d1af48cf6aa167ad67587
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.click(Unknown Source)
+	at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">scripts._01_AppleTest#testAppleURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">scripts._02_TechGlobalTest#testApplicationFormHeading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">scripts._03_EtsyTest#testEtsyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">scripts._03_EtsyTest#testEtsySearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">scripts._03_EtsyTest#testEtsySearchResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">scripts._03_EtsyTest#testMainHeader</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">scripts._04_GoogleSearchTest#testGoogleStoreLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">scripts._05_CheckBoxTest#testCheckBoxInHeroApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">scripts._06_RadioButtonTest#testFacebookGenderRadioButtons</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">scripts._07_DropdownTest#testEbayDropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">scripts._07_DropdownTest#testUnsecurePasswordErrorMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
