@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="95.788" tests="8" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="98.015" tests="8" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="18.0.1+0"/>
@@ -40,7 +40,7 @@
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.5/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="18"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -PRegression"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -PRegression"/>
     <property name="java.home" value="/usr/local/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
@@ -61,29 +61,30 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testAppleURL" classname="scripts._01_AppleTest" time="1.645"/>
-  <testcase name="testMainHeader" classname="scripts._03_EtsyTest" time="1.637"/>
-  <testcase name="testGoogleStoreLink" classname="scripts._04_GoogleSearchTest" time="2.253"/>
-  <testcase name="testCheckBoxInHeroApp" classname="scripts._05_CheckBoxTest" time="8.979"/>
-  <testcase name="testFacebookGenderRadioButtons" classname="scripts._06_RadioButtonTest" time="3.107"/>
-  <testcase name="testUnsecurePasswordErrorMessage" classname="scripts._07_DropdownTest" time="2.944"/>
-  <testcase name="testExpediaDropdowns" classname="scripts._07_DropdownTest" time="37.898">
-    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=102.0.5005.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Uthmans-MacBook-Pro.local&apos;, ip: &apos;2601:244:4801:930:b5cc:4395:3e96:a957%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:53907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b6bde4fb497d1af48cf6aa167ad67587" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
+  <testcase name="testAppleURL" classname="scripts._01_AppleTest" time="0.97"/>
+  <testcase name="testMainHeader" classname="scripts._03_EtsyTest" time="3.487"/>
+  <testcase name="testGoogleStoreLink" classname="scripts._04_GoogleSearchTest" time="2.749"/>
+  <testcase name="testCheckBoxInHeroApp" classname="scripts._05_CheckBoxTest" time="9.344"/>
+  <testcase name="testFacebookGenderRadioButtons" classname="scripts._06_RadioButtonTest" time="3.113"/>
+  <testcase name="testUnsecurePasswordErrorMessage" classname="scripts._07_DropdownTest" time="4.961"/>
+  <testcase name="testExpediaDropdowns" classname="scripts._07_DropdownTest" time="36.793">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#preferred-class-input-trigger&quot;}&#10;  (Session info: chrome=102.0.5005.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Uthmans-MacBook-Pro.local&apos;, ip: &apos;2601:244:4801:930:1dd2:1d28:d98f:56e1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ba3e3013cbcebe5db315836caa256a14&#10;*** Element info: {Using=css selector, value=#preferred-class-input-trigger}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#preferred-class-input-trigger"}
   (Session info: chrome=102.0.5005.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Uthmans-MacBook-Pro.local', ip: '2601:244:4801:930:b5cc:4395:3e96:a957%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.3', java.version: '18.0.1'
+System info: host: 'Uthmans-MacBook-Pro.local', ip: '2601:244:4801:930:1dd2:1d28:d98f:56e1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.3', java.version: '18.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:53907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b6bde4fb497d1af48cf6aa167ad67587
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ba3e3013cbcebe5db315836caa256a14
+*** Element info: {Using=css selector, value=#preferred-class-input-trigger}
 	at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:70)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 39953
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 28002
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 29, 2022 3:58:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 02, 2022 7:37:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
