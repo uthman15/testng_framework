@@ -25,6 +25,8 @@ public class Base {
     HeroAppPage heroAppPage;
     FacebookPage facebookPage;
     ExpediaPage expediaPage;
+    RediffHomePage rediffHomePage;
+    AmazonHomePage amazonHomePage;
 
     @BeforeMethod
     public void setup(){
@@ -39,6 +41,8 @@ public class Base {
         heroAppPage = new HeroAppPage(driver);
         facebookPage = new FacebookPage(driver);
         expediaPage = new ExpediaPage(driver);
+        rediffHomePage = new RediffHomePage(driver);
+        amazonHomePage = new AmazonHomePage(driver);
     }
 
     @AfterMethod
