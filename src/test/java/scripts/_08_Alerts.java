@@ -148,6 +148,7 @@ public class _08_Alerts extends Base{
         amazonHomePage.zipCodeInputBox.sendKeys(zipCode);
         Waiter.pause(2);
         amazonHomePage.applyButton.click();
+        Waiter.pause(2);
 
         Assert.assertTrue(amazonHomePage.deliveryMessage.getText().contains(zipCode));
         Waiter.pause(2);

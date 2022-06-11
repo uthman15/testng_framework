@@ -71,7 +71,7 @@ public class _03_EtsyTest extends Base {
         driver.get("https://www.etsy.com/");
 
         String[] expectedTexts = {
-                "Shop Home Sales!",
+                "Father's Day Gifts",
                 "Jewelry & Accessories",
                 "Clothing & Shoes",
                 "Home & Living",

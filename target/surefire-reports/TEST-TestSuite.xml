@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="98.015" tests="8" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="317.05" tests="26" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="18.0.1+0"/>
@@ -29,7 +29,7 @@
     <property name="java.class.version" value="62.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="12.3"/>
+    <property name="os.version" value="12.4"/>
     <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.8.5/libexec/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/uthmanmusleh"/>
@@ -40,7 +40,7 @@
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.5/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="18"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -PRegression"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -PRegression"/>
     <property name="java.home" value="/usr/local/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
@@ -61,32 +61,72 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testAppleURL" classname="scripts._01_AppleTest" time="0.97"/>
-  <testcase name="testMainHeader" classname="scripts._03_EtsyTest" time="3.487"/>
-  <testcase name="testGoogleStoreLink" classname="scripts._04_GoogleSearchTest" time="2.749"/>
-  <testcase name="testCheckBoxInHeroApp" classname="scripts._05_CheckBoxTest" time="9.344"/>
-  <testcase name="testFacebookGenderRadioButtons" classname="scripts._06_RadioButtonTest" time="3.113"/>
-  <testcase name="testUnsecurePasswordErrorMessage" classname="scripts._07_DropdownTest" time="4.961"/>
-  <testcase name="testExpediaDropdowns" classname="scripts._07_DropdownTest" time="36.793">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#preferred-class-input-trigger&quot;}&#10;  (Session info: chrome=102.0.5005.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Uthmans-MacBook-Pro.local&apos;, ip: &apos;2601:244:4801:930:1dd2:1d28:d98f:56e1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ba3e3013cbcebe5db315836caa256a14&#10;*** Element info: {Using=css selector, value=#preferred-class-input-trigger}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#preferred-class-input-trigger"}
-  (Session info: chrome=102.0.5005.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Uthmans-MacBook-Pro.local', ip: '2601:244:4801:930:1dd2:1d28:d98f:56e1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.3', java.version: '18.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ba3e3013cbcebe5db315836caa256a14
-*** Element info: {Using=css selector, value=#preferred-class-input-trigger}
-	at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:70)
+  <testcase name="testAppleURL" classname="scripts._01_AppleTest" time="0.971"/>
+  <testcase name="testMainHeader" classname="scripts._03_EtsyTest" time="2.46">
+    <failure message="expected [Shop Home Sales!] but found [Father&apos;s Day Gifts]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Shop Home Sales!] but found [Father's Day Gifts]
+	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:85)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 28002
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 39866
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2022 7:37:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 11, 2022 2:36:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="testEbayDropdown" classname="scripts._07_DropdownTest" time="0"/>
+  <testcase name="testGoogleStoreLink" classname="scripts._04_GoogleSearchTest" time="2.789"/>
+  <testcase name="testCheckBoxInHeroApp" classname="scripts._05_CheckBoxTest" time="9.118"/>
+  <testcase name="testFacebookGenderRadioButtons" classname="scripts._06_RadioButtonTest" time="3.097"/>
+  <testcase name="testUnsecurePasswordErrorMessage" classname="scripts._07_DropdownTest" time="5.873"/>
+  <testcase name="testExpediaDropdowns" classname="scripts._07_DropdownTest" time="66.061">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#preferred-class-input-trigger&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Uthmans-MacBook-Pro.local&apos;, ip: &apos;2601:244:4801:930:dc8d:bb25:6c60:60db%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:52899}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e66b60338158270abcd899f6953a9ade&#10;*** Element info: {Using=css selector, value=#preferred-class-input-trigger}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#preferred-class-input-trigger"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Uthmans-MacBook-Pro.local', ip: '2601:244:4801:930:dc8d:bb25:6c60:60db%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:52899}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e66b60338158270abcd899f6953a9ade
+*** Element info: {Using=css selector, value=#preferred-class-input-trigger}
+	at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:70)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 16821
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 11, 2022 2:37:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testEbayDropdown" classname="scripts._07_DropdownTest" time="0.001"/>
+  <testcase name="testEtsySignInModal" classname="scripts._08_Alerts" time="3.376"/>
+  <testcase name="testInformationWarningAlert" classname="scripts._08_Alerts" time="1.451"/>
+  <testcase name="testConfirmationAlert" classname="scripts._08_Alerts" time="16.347"/>
+  <testcase name="testPromptAlert" classname="scripts._08_Alerts" time="15.528"/>
+  <testcase name="testAmazonAddressModal" classname="scripts._08_Alerts" time="12.826">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at scripts._08_Alerts.testAmazonAddressModal(_08_Alerts.java:152)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 38259
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 11, 2022 2:39:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testIFrame1" classname="scripts._09_IFrames" time="11.471"/>
+  <testcase name="testIFrame2" classname="scripts._09_IFrames" time="7.049"/>
+  <testcase name="testTechGlobalSchoolFaceBookIcon" classname="scripts._10_WindowHandles" time="3.129"/>
+  <testcase name="testWindowHandle2" classname="scripts._10_WindowHandles" time="2.126"/>
+  <testcase name="testFileUpload1" classname="scripts._11_FileUpload" time="5.114"/>
+  <testcase name="testFileDownload" classname="scripts._11_FileUpload" time="0.92"/>
+  <testcase name="moveToElementPractice1" classname="scripts._12_Actions_Class" time="3.171"/>
+  <testcase name="moveToElementPractice2" classname="scripts._12_Actions_Class" time="10.902"/>
+  <testcase name="clickOnElementPractice" classname="scripts._12_Actions_Class" time="2.897"/>
+  <testcase name="rightClickPractice" classname="scripts._12_Actions_Class" time="3.056"/>
+  <testcase name="clickHoldAndReleasePractice" classname="scripts._12_Actions_Class" time="2.646"/>
+  <testcase name="sendKeysToAnElement" classname="scripts._12_Actions_Class" time="2.19"/>
+  <testcase name="practiceKeyDownAndKeyUp" classname="scripts._12_Actions_Class" time="10.047"/>
 </testsuite>

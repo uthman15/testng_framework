@@ -3,6 +3,20 @@
 <suite name="Failed suite [Regression]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="All Functionalities(failed)" verbose="0">
     <classes>
+      <class name="scripts._03_EtsyTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="testMainHeader"/>
+        </methods>
+      </class> <!-- scripts._03_EtsyTest -->
+      <class name="scripts._08_Alerts">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="testAmazonAddressModal"/>
+        </methods>
+      </class> <!-- scripts._08_Alerts -->
       <class name="scripts._07_DropdownTest">
         <methods>
           <include name="setup"/>

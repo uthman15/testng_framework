@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>All Functionalities</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>23/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 02 19:36:35 CDT 2022</td>
+<td>Started on:</td><td>Sat Jun 11 14:36:40 CDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>97 seconds (97452 ms)</td>
+<tr><td>Total time:</td><td>316 seconds (316491 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,59 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='scripts._08_Alerts.testAmazonAddressModal()'><b>testAmazonAddressModal</b><br>Test class: scripts._08_Alerts<br>Test method: TASK-5 - Amazon Address Modal</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at scripts._08_Alerts.testAmazonAddressModal(_08_Alerts.java:152)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1252069894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1252069894'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at scripts._08_Alerts.testAmazonAddressModal(_08_Alerts.java:152)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>12</td>
+<td>scripts._08_Alerts@382db087</td></tr>
+<tr>
 <td title='scripts._07_DropdownTest.testExpediaDropdowns()'><b>testExpediaDropdowns</b><br>Test class: scripts._07_DropdownTest<br>Test method: TC578: Validate Expedia dropdowns</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#preferred-class-input-trigger&quot;}
-  (Session info: chrome=102.0.5005.61)
+  (Session info: chrome=102.0.5005.115)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Uthmans-MacBook-Pro.local&apos;, ip: &apos;2601:244:4801:930:1dd2:1d28:d98f:56e1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3&apos;, java.version: &apos;18.0.1&apos;
+System info: host: &apos;Uthmans-MacBook-Pro.local&apos;, ip: &apos;2601:244:4801:930:dc8d:bb25:6c60:60db%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;18.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ba3e3013cbcebe5db315836caa256a14
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:52899}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e66b60338158270abcd899f6953a9ade
 *** Element info: {Using=css selector, value=#preferred-class-input-trigger}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -100,15 +144,15 @@ Session ID: ba3e3013cbcebe5db315836caa256a14
 	at jdk.proxy2/jdk.proxy2.$Proxy9.click(Unknown Source)
 	at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:70)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18338606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace18338606'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#preferred-class-input-trigger&quot;}
-  (Session info: chrome=102.0.5005.61)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1081159401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1081159401'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#preferred-class-input-trigger&quot;}
+  (Session info: chrome=102.0.5005.115)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Uthmans-MacBook-Pro.local&apos;, ip: &apos;2601:244:4801:930:1dd2:1d28:d98f:56e1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3&apos;, java.version: &apos;18.0.1&apos;
+System info: host: &apos;Uthmans-MacBook-Pro.local&apos;, ip: &apos;2601:244:4801:930:dc8d:bb25:6c60:60db%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;18.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ba3e3013cbcebe5db315836caa256a14
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/09/rldzht6j09b...}, goog:chromeOptions: {debuggerAddress: localhost:52899}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e66b60338158270abcd899f6953a9ade
 *** Element info: {Using=css selector, value=#preferred-class-input-trigger}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -157,8 +201,53 @@ Session ID: ba3e3013cbcebe5db315836caa256a14
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 </pre></div></td>
-<td>36</td>
-<td>scripts._07_DropdownTest@4ae82894</td></tr>
+<td>66</td>
+<td>scripts._07_DropdownTest@b9afc07</td></tr>
+<tr>
+<td title='scripts._03_EtsyTest.testMainHeader()'><b>testMainHeader</b><br>Test class: scripts._03_EtsyTest<br>Test method: TC905: Validate Etsy main header</td>
+<td><div><pre>java.lang.AssertionError: expected [Shop Home Sales!] but found [Father&apos;s Day Gifts]
+	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29774113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29774113'><pre>java.lang.AssertionError: expected [Shop Home Sales!] but found [Father&apos;s Day Gifts]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>2</td>
+<td>scripts._03_EtsyTest@aecb35a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -168,40 +257,120 @@ Session ID: ba3e3013cbcebe5db315836caa256a14
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='scripts._12_Actions_Class.clickHoldAndReleasePractice()'><b>clickHoldAndReleasePractice</b><br>Test class: scripts._12_Actions_Class<br>Test method: Actions | Click - hold and release | Drag and drop</td>
+<td></td>
+<td>2</td>
+<td>scripts._12_Actions_Class@15bfd87</td></tr>
+<tr>
+<td title='scripts._12_Actions_Class.clickOnElementPractice()'><b>clickOnElementPractice</b><br>Test class: scripts._12_Actions_Class<br>Test method: Actions | Click</td>
+<td></td>
+<td>2</td>
+<td>scripts._12_Actions_Class@15bfd87</td></tr>
+<tr>
+<td title='scripts._12_Actions_Class.moveToElementPractice1()'><b>moveToElementPractice1</b><br>Test class: scripts._12_Actions_Class<br>Test method: Actions | move to element</td>
+<td></td>
+<td>3</td>
+<td>scripts._12_Actions_Class@15bfd87</td></tr>
+<tr>
+<td title='scripts._12_Actions_Class.moveToElementPractice2()'><b>moveToElementPractice2</b><br>Test class: scripts._12_Actions_Class<br>Test method: Actions | move to element 1</td>
+<td></td>
+<td>10</td>
+<td>scripts._12_Actions_Class@15bfd87</td></tr>
+<tr>
+<td title='scripts._12_Actions_Class.practiceKeyDownAndKeyUp()'><b>practiceKeyDownAndKeyUp</b><br>Test class: scripts._12_Actions_Class<br>Test method: Actions | key down and key up</td>
+<td></td>
+<td>10</td>
+<td>scripts._12_Actions_Class@15bfd87</td></tr>
+<tr>
+<td title='scripts._12_Actions_Class.rightClickPractice()'><b>rightClickPractice</b><br>Test class: scripts._12_Actions_Class<br>Test method: Actions | Right click</td>
+<td></td>
+<td>3</td>
+<td>scripts._12_Actions_Class@15bfd87</td></tr>
+<tr>
+<td title='scripts._12_Actions_Class.sendKeysToAnElement()'><b>sendKeysToAnElement</b><br>Test class: scripts._12_Actions_Class<br>Test method: Actions class | send keys to an element</td>
+<td></td>
+<td>2</td>
+<td>scripts._12_Actions_Class@15bfd87</td></tr>
+<tr>
 <td title='scripts._01_AppleTest.testAppleURL()'><b>testAppleURL</b><br>Test class: scripts._01_AppleTest<br>Test method: TC873</td>
 <td></td>
 <td>0</td>
-<td>scripts._01_AppleTest@35a50a4c</td></tr>
+<td>scripts._01_AppleTest@7dc222ae</td></tr>
 <tr>
 <td title='scripts._05_CheckBoxTest.testCheckBoxInHeroApp()'><b>testCheckBoxInHeroApp</b><br>Test class: scripts._05_CheckBoxTest<br>Test method: TC001: Validate checkbox in hero app</td>
 <td></td>
 <td>9</td>
-<td>scripts._05_CheckBoxTest@587c290d</td></tr>
+<td>scripts._05_CheckBoxTest@8b87145</td></tr>
+<tr>
+<td title='scripts._08_Alerts.testConfirmationAlert()'><b>testConfirmationAlert</b><br>Test class: scripts._08_Alerts<br>Test method:  TASK-3 Confirmation Alert</td>
+<td></td>
+<td>16</td>
+<td>scripts._08_Alerts@382db087</td></tr>
 <tr>
 <td title='scripts._07_DropdownTest.testEbayDropdown()'><b>testEbayDropdown</b><br>Test class: scripts._07_DropdownTest<br>Test method: TC242: Validate Ebay dropdown</td>
 <td></td>
 <td>0</td>
-<td>scripts._07_DropdownTest@4ae82894</td></tr>
+<td>scripts._07_DropdownTest@b9afc07</td></tr>
+<tr>
+<td title='scripts._08_Alerts.testEtsySignInModal()'><b>testEtsySignInModal</b><br>Test class: scripts._08_Alerts<br>Test method: TASK-1 - Regular HTML Alert</td>
+<td></td>
+<td>3</td>
+<td>scripts._08_Alerts@382db087</td></tr>
 <tr>
 <td title='scripts._06_RadioButtonTest.testFacebookGenderRadioButtons()'><b>testFacebookGenderRadioButtons</b><br>Test class: scripts._06_RadioButtonTest<br>Test method: TC234: Validate Facebook gender radio buttons</td>
 <td></td>
 <td>3</td>
-<td>scripts._06_RadioButtonTest@4516af24</td></tr>
+<td>scripts._06_RadioButtonTest@6483f5ae</td></tr>
+<tr>
+<td title='scripts._11_FileUpload.testFileDownload()'><b>testFileDownload</b><br>Test class: scripts._11_FileUpload<br>Test method: File Download</td>
+<td></td>
+<td>0</td>
+<td>scripts._11_FileUpload@5427c60c</td></tr>
+<tr>
+<td title='scripts._11_FileUpload.testFileUpload1()'><b>testFileUpload1</b><br>Test class: scripts._11_FileUpload<br>Test method: File Upload</td>
+<td></td>
+<td>5</td>
+<td>scripts._11_FileUpload@5427c60c</td></tr>
 <tr>
 <td title='scripts._04_GoogleSearchTest.testGoogleStoreLink()'><b>testGoogleStoreLink</b><br>Test class: scripts._04_GoogleSearchTest<br>Test method: TC123: Validate Google Store link</td>
 <td></td>
 <td>2</td>
-<td>scripts._04_GoogleSearchTest@103f852</td></tr>
+<td>scripts._04_GoogleSearchTest@5fcd892a</td></tr>
 <tr>
-<td title='scripts._03_EtsyTest.testMainHeader()'><b>testMainHeader</b><br>Test class: scripts._03_EtsyTest<br>Test method: TC905: Validate Etsy main header</td>
+<td title='scripts._09_IFrames.testIFrame1()'><b>testIFrame1</b><br>Test class: scripts._09_IFrames</td>
+<td></td>
+<td>11</td>
+<td>scripts._09_IFrames@73d4cc9e</td></tr>
+<tr>
+<td title='scripts._09_IFrames.testIFrame2()'><b>testIFrame2</b><br>Test class: scripts._09_IFrames</td>
+<td></td>
+<td>7</td>
+<td>scripts._09_IFrames@73d4cc9e</td></tr>
+<tr>
+<td title='scripts._08_Alerts.testInformationWarningAlert()'><b>testInformationWarningAlert</b><br>Test class: scripts._08_Alerts<br>Test method: TASK-2 - Information-Warning alert</td>
+<td></td>
+<td>1</td>
+<td>scripts._08_Alerts@382db087</td></tr>
+<tr>
+<td title='scripts._08_Alerts.testPromptAlert()'><b>testPromptAlert</b><br>Test class: scripts._08_Alerts<br>Test method: TASK-4 Prompt Alert</td>
+<td></td>
+<td>15</td>
+<td>scripts._08_Alerts@382db087</td></tr>
+<tr>
+<td title='scripts._10_WindowHandles.testTechGlobalSchoolFaceBookIcon()'><b>testTechGlobalSchoolFaceBookIcon</b><br>Test class: scripts._10_WindowHandles<br>Test method:  TEST CASE 1: Validate FaceBook social media icon for TechGlobal School</td>
 <td></td>
 <td>3</td>
-<td>scripts._03_EtsyTest@1f021e6c</td></tr>
+<td>scripts._10_WindowHandles@80169cf</td></tr>
 <tr>
 <td title='scripts._07_DropdownTest.testUnsecurePasswordErrorMessage()'><b>testUnsecurePasswordErrorMessage</b><br>Test class: scripts._07_DropdownTest<br>Test method: TC763: Validate Facebook sign in error message for password</td>
 <td></td>
-<td>4</td>
-<td>scripts._07_DropdownTest@4ae82894</td></tr>
+<td>5</td>
+<td>scripts._07_DropdownTest@b9afc07</td></tr>
+<tr>
+<td title='scripts._10_WindowHandles.testWindowHandle2()'><b>testWindowHandle2</b><br>Test class: scripts._10_WindowHandles<br>Test method: TEST CASE 2: Multiple Windows</td>
+<td></td>
+<td>2</td>
+<td>scripts._10_WindowHandles@80169cf</td></tr>
 </table><p>
 </body>
 </html>
