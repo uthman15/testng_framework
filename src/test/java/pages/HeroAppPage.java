@@ -60,6 +60,9 @@ public class HeroAppPage {
     @FindBy(linkText = "myFileUthman.txt")
     public WebElement downloadFileLink;
 
+    @FindBy(css = "table1 th")
+    public List<WebElement> table1Headers;
+
     public void clickOnLink(String linkText){
         for (WebElement link : links) {
             if(link.getText().equals(linkText)){
@@ -78,5 +81,13 @@ public class HeroAppPage {
         }
     }
 
+    @FindBy(id = "username")
+    public WebElement username;
+
+    @FindBy(id = "password")
+    public WebElement password;
+
+    @FindBy(css = ".radius")
+    public WebElement loginButton;
 
 }
